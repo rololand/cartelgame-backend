@@ -1,0 +1,22 @@
+{
+  "name": "corpogamebackend",
+  "version": "1.0.0",
+  "description": "\"# corpogameBackend\"",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rololand/corpogameBackend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rololand/corpogameBackend/issues"
+  },
+  "homepage": "https://github.com/rololand/corpogameBackend#readme",
+  "dependencies": {
+    "mongodb": "^3.6.0"
+  }
+}

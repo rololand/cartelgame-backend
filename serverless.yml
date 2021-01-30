@@ -1,0 +1,49 @@
+service: corpogamelambdafunctions
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+functions:
+  usersGet:
+    handler: users.getByUsername
+    events:
+      - http:
+          path: users/{username}
+          method: get
+  herosGet:
+    handler: heros.getById
+    events:
+      - http:
+          path: heros/{id}
+          method: get
+  herosPut:
+    handler: heros.putById
+    events:
+      - http:
+          path: heros/{id}
+          method: put
+  tasksGet:
+    handler: tasks.getTasks
+    events:
+      - http:
+          path: tasks/
+          method: get
+  bribesGet:
+    handler: bribes.getBribes
+    events:
+      - http:
+          path: bribes/
+          method: get
+  itemsGet:
+    handler: items.getItems
+    events:
+      - http:
+          path: items/
+          method: get
+  lvlsGet:
+    handler: lvls.getLvls
+    events:
+      - http:
+          path: lvls/
+          method: get
